@@ -1,16 +1,17 @@
 services:
   - type: web
-    name: automated-trading-system
-    env: node
-    buildCommand: npm install
-    startCommand: npm start
-    plan: free
+    name: traderedge-backend
+    runtime: node
+    buildCommand: npm install && npx prisma generate
+    startCommand: node backend-server-render.js
     envVars:
-      - key: PORT
-        value: 10000
       - key: NODE_ENV
         value: production
-      - key: FOREX_DATA_SERVICE_URL
-        value: https://forex-data-service.onrender.com
-      - key: TRADING_BOT_URL
-        value: https://trading-signal-bot.onrender.com
+      - key: PORT
+        value: 3001
+      - key: DATABASE_URL
+        value: file:./dev.db
+      - key: RESEND_API_KEY
+        value: re_gQG5dfPk_CV7HFWvAy5vf66FvYRkeCRme
+      - key: VITE_API_BASE
+        value: https://backend-ox9b.onrender.com
