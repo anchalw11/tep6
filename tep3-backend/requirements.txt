@@ -1,0 +1,17 @@
+Flask==2.3.3
+Flask-JWT-Extended==4.5.3
+Flask-CORS==4.0.0
+Flask-SocketIO==5.3.6
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.7
+bcrypt==4.0.1
+python-dotenv==1.0.0
+requests==2.31.0
+eventlet==0.33.3
+python-socketio==5.8.0
+supabase==1.0.3
+stripe==7.0.0
+cryptomus==0.1.0
+paypalrestsdk==1.13.2
+uuid
+werkzeug==2.3.7
