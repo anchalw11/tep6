@@ -1,0 +1,10 @@
+{
+  "name": "tep3-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd tep3-frontend && npm install && npm run dev",
+    "build": "cd tep3-frontend && npm install && npm run build",
+    "preview": "cd tep3-frontend && npm run preview"
+  }
+}
